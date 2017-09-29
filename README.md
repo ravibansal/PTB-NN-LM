@@ -3,7 +3,7 @@ Language model on the Penn Treebank (PTB) data using LSTM based RNNs.
 
 In this assignment you have to train a language model on the Penn Treebank (PTB) data using
 LSTM based RNNs.
-In brief, given the first i − 1 words of a natural sentence, a language model is a probability distribution over the ith word i.e. P (w(i)|w(i−1) , . . . , w(1)). The task is to learn this probability distribution P .
+In brief, given the first i − 1 words of a natural sentence, a language model is a probability distribution over the ith word i.e. P(w(i)|w(i−1) , . . . , w(1)). The task is to learn this probability distribution P .
 
 #Problem Statement
 The Penn Treebank contains a natural text dataset, using which you can use to train a language model. You can model the probability P (w i |w i−1 , . . . , w 1 ) using LSTMs by providing the LSTM with the input sequence w i−1 , . . . , w 1 and predict the probability P distribution of the output word.
