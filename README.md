@@ -6,7 +6,7 @@ LSTM based RNNs.
 In brief, given the first i − 1 words of a natural sentence, a language model is a probability distribution over the ith word i.e. P(w(i)|w(i−1) , . . . , w(1)). The task is to learn this probability distribution P .
 
 # Problem Statement
-The Penn Treebank contains a natural text dataset, using which you can use to train a language model. You can model the probability P(w(i)|w(i−1) , . . . , w(1)) using LSTMs by providing the LSTM with the input sequence w i−1 , . . . , w 1 and predict the probability P distribution of the output word.
+The Penn Treebank contains a natural text dataset, using which you can use to train a language model. You can model the probability P(w(i)|w(i−1) , . . . , w(1)) using LSTMs by providing the LSTM with the input sequence w(i−1), . . ., w(1) and predict the probability P distribution of the output word.
 This can be achieved by minimizing the cross-entropy loss (− Sum(P(w(i)|·)log(P(w(i)|·))) of the output word.
 For evaluating language models, a popular measure known as perplexity is often used. Perplexity of a probability distribution p is given by the exponential of the cross-entropy loss.
 2^H(p) = 2^(−Sum(P(x)log p(x)))
